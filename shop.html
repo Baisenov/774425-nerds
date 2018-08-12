@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Макет HTML Academy "Нёрдс"</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Логотип дизайн-студии Нердс">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clientele.html">Клиенты</a></li>
+          <li><a class="shop.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="shop-navigation">
+          <a class="cart-link" href="#"><i class="icon-basket"></i>Корзина</a>
+        </div>
+      </nav>
+
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <form class="shop-sort">
+      <h2>Стоимость:</h2>
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 0; width: 70%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">От
+            <input type="text" name="price-from" value="0">
+          </label>
+          <label class="max-price">До
+            <input type="text" name="price-to" value="15000">
+          </label>
+        </div>
+      </div>
+      <fieldset class="grid">
+        <h2>Сетка:</h2>
+        <input type="radio" name="grid-option" id="adaptive" checked>
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid-option" id="fix" checked>
+        <label for="fix">Фиксированная</label>
+        <input type="radio" name="grid-option" id="flex" checked>
+        <label for="flex">Резиновая</label>
+      </fieldset>
+      <fieldset class="specifics">
+        <h2>Особенности:</h2>
+        <input type="checkbox" id="slider" checked>
+        <label for="slider">Слайдер</label>
+        <input type="checkbox" id="ftrs">
+        <label for="ftrs">Блок преимуществ</label>
+        <input type="checkbox" id="news" checked>
+        <label for="news">Новости</label>
+        <input type="checkbox" id="galery">
+        <label for="galery">Галерея</label>
+        <input type="checkbox" id="cart">
+        <label for="cart">Корзина</label>
+      </fieldset>
+      <input type="submit" class="show-btn" value="Показать">
+    </form>
+
+    <div class="samples">
+      <div class="samples-sort">
+        <span>Сортировать:</span>
+        <ul>
+          <li>
+            <a class="active-sort">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="samples-galery">
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Sedona">
+            <h2>Sedona</h2>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9900 р.</a>
+          </div>
+        </article>
+
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
+            <h2>Pink</h2>
+            <p>Мобильное приложение Pink для IOS, Android и Windows Phone</p>
+        </article>
+
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Borodinski">
+            <h2> Barber-shop Borodinski</h2>
+            <p>Интернет магазин "Barber-shop Borodinski"</p>
+        </article>
+
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Mishka">
+            <h2>Mishka</h2>
+            <p>Интернет магазин.Вязание на заказ</p>
+        </article>
+
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Academy A+">
+            <h2>Academy A+</h2>
+            <p>Сайт Академии</p>
+        </article>
+
+        <article class="sample-item">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Кваст">
+            <h2>Кваст</h2>
+            <p>Интернет-магазин крафтового кваса</p>
+        </article>
+
+        <div class="pages">
+          <a class="active-page">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="map">
+    <div class="container">
+      <div class="contact-us">
+        <h4>NЁrds design studio</h4>
+        <p>191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <P>Напишите нам</p>
+      </div>
+    </div>
+  </section>
+  <footer class="container">
+  <div class="share">
+    <ul class="social network">
+      <li><a href="vk.html">VK</a></li>
+      <li><a href="facebook.html">facebook</a></li>
+      <li><a href="instagram.html">instagram</a></li>
+    </ul>
+  </div>
+  <div class="friendship">
+    <h3>Давайте дружить, это выгодно!</h3>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+  </footer>
+  </body>
+  </html>
