@@ -10,23 +10,49 @@ color: #2f3439;
 text-transform: uppercase;
 
 background-color: #ffffff;
-}
+ }
 
 a {
     text-decoration: none;
-}
-/*Навигация по сайту*/
-.main-navigation {
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
-
-    background-color: #ededed;
 }
 /*Состояние лого при наведении*/
 .container a:hover,
 .container a:focus {
     color: #000000;
+}
+
+.main-header {
+    background-color: #ededed;
+}
+.slide-title {
+    font-size: 40px;
+    line-height: 55px;
+    color: 000000;
+    font-weight: 500;
+}
+.slide-title p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #2f3439;
+    font-weight: 400;
+}
+.slide {
+    background-image: 
+    url("../img/slide1.jpg"),
+    background-repeat: no-repeat;
+    background-position: 570px 132px;
+    width: 698px;
+    height: 413px;
+}
+.slide {
+    background-image: 
+    url("../img/slide2.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.site-navigation {
+    list-style: none;
 }
 
 .site-navigation,
@@ -48,26 +74,9 @@ a {
 .shop-navigation a:focus {
     color: #fb565a;
 }
-
-.slide-title {
-    font-size: 40px;
-    line-height: 55px;
-    color: 000000;
-    font-weight: 500;
+.active a:hover {
+    background-color: red;
 }
-.slide-title div {
-    background-image: url("../img/slide1.jpg");
-    background-position: 571px 132px;
-    background-repeat: no-repeat;
-}
-
-.slide-title p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #2f3439;
-    font-weight: 400;
-}
-
 .btn {
     font-size: 16px;
     line-height: 18px;
@@ -140,9 +149,9 @@ a {
     font: inherit;
 }
 
-/* Состояния кнопок при наведении*/
 .feature-btn-red:hover,
 .feature-btn-red:focus {
+    color: #ffffff;
     background-color: #e74246;
 }
 .feature-btn-red:active {
@@ -294,7 +303,7 @@ a {
     color: #000000;
     font-weight: 400;
 }
-.samples-galery {
+.samples-galery li {
     list-style: none;
 }
 .active-page-btn {
