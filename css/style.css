@@ -1,4 +1,3 @@
-
 body {
 margin: 0;
 padding: 0;
@@ -15,40 +14,76 @@ background-color: #ffffff;
 a {
     text-decoration: none;
 }
-/*Состояние лого при наведении*/
-.container a:hover,
-.container a:focus {
-    color: #000000;
+.main-header .logo {
+    background-image: url(../img/main-logo.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 160px;
+    height: 65px;
+}
+.main-header .logo:hover {
+    background-image: url(../img/main-logo1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 160px;
+    height: 65px;
+}
+.main-header .logo:active {
+    background-image: url(../img/main-logo2.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 160px;
+    height: 65px;
 }
 
 .main-header {
     background-color: #ededed;
 }
-.slide-title {
-    font-size: 40px;
+.slide-title1 {
+    font-size: 55px;
     line-height: 55px;
-    color: 000000;
+    color: #000000;
     font-weight: 500;
 }
-.slide-title p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #2f3439;
-    font-weight: 400;
+.slide-title2 {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    font-weight: 500;
 }
-.slide {
-    background-image: 
-    url("../img/slide1.jpg"),
+.slide-title3 {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.slide .slide-title1 {
+    background-image: url("../img/slide1.jpg");
+    background-position: 100% 50%;
     background-repeat: no-repeat;
-    background-position: 570px 132px;
     width: 698px;
     height: 413px;
 }
-.slide {
-    background-image: 
-    url("../img/slide2.jpg");
+.slide .slide-title2 {
+    background-image: url("../img/slide2.jpg");
+    background-position: 100% 50%;
     background-repeat: no-repeat;
-
+    width: 698px;
+    height: 413px;
+}
+.slide .slide-title3 {
+    background-image: url("../img/slide3.jpg");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    width: 698px;
+    height: 413px;
+}
+.slide p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    font-weight: 400;
 }
 
 .site-navigation {
@@ -74,6 +109,11 @@ a {
 .shop-navigation a:focus {
     color: #fb565a;
 }
+.site-navigation a:active,
+.shop-navigation a:active {
+    color: #ababab;
+}
+
 .active a:hover {
     background-color: red;
 }
@@ -90,7 +130,58 @@ a {
     background-color: #e74246;
 }
 .btn:active {
-    background-color: #d7373b;
+    color: #d7373b;
+}
+.feature-btn-red {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
+    font-weight: 500;
+    font: inherit;
+}
+.feature-btn-green {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #00ca74;
+    font-weight: 500;
+    font: inherit;
+}
+.feature-btn-yellow {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #efc84a;
+    font-weight: 500;
+    font: inherit;
+}
+
+.products .feature-btn-red:hover,
+.products .feature-btn-red:focus {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.products .feature-btn-red:active {
+    color: #d7373b;
+}
+
+.products .feature-btn-green:hover,
+.products .feature-btn-green:focus {
+    color: #ffffff;
+    background-color: #00bc6c;
+}
+.products .feature-btn-green:active {
+    color: #00aa62;
+}
+
+.products .feature-btn-yellow:hover,
+.products .feature-btn-yellow:focus {
+    color: #ffffff;
+    background-color: #eab534;
+}
+.products .feature-btn-yellow:active {
+    color: #e5a722;
 }
 
 .products p:first-child {
@@ -120,58 +211,8 @@ a {
 .procucts p {
     font-size: 16px;
     line-height: 24px;
-    color: #2f3439;
+    color: #283136;
     font-weight: 400;
-}
-
-.feature-btn-red {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #fb565a;
-    font-weight: 500;
-    font: inherit;
-}
-.feature-btn-green {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #00ca74;
-    font-weight: 500;
-    font: inherit;
-}
-.feature-btn-yellow {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #efc84a;
-    font-weight: 500;
-    font: inherit;
-}
-
-.feature-btn-red:hover,
-.feature-btn-red:focus {
-    color: #ffffff;
-    background-color: #e74246;
-}
-.feature-btn-red:active {
-    background-color: #d7373b;
-}
-
-.feature-btn-green:hover,
-.feature-btn-green:focus {
-    background-color: #00bc6c;
-}
-.feature-btn-green:active {
-    background-color: #00aa62;
-}
-
-.feature-btn-yellow:hover,
-.feature-btn-yellow:focus {
-    background-color: #eab534;
-}
-.feature-btn-yellow:active {
-    background-color: #e5a722;
 }
 
 .header {
@@ -188,7 +229,7 @@ a {
 .about-us p {
     font-size: 16px;
     line-height: 24px;
-    color: #2f3439;
+    color: #283136;
     font-weight: 400;
 }
 
@@ -196,7 +237,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    font-weight: 500;
+    font-weight: 700;
 
 }
 
@@ -204,7 +245,7 @@ a {
     list-style: none;
     font-size: 16px;
     line-height: 24px;
-    color: #2f3439;
+    color: #283136;
     font-weight: 400;
 }
 
@@ -221,7 +262,7 @@ a {
 
 .percentages li {
     font-size: 45px;
-    line-height: 45px;
+    line-height: 10,06px;
     color: #000000;
     font-weight: 700;
     list-style: none;
@@ -230,7 +271,7 @@ a {
 .advan li {
     font-size: 16px;
     line-height: 18px;
-    color: #2f3439;
+    color: #283136;
     font-weight: 400;
     list-style: none;
 }
@@ -238,10 +279,91 @@ a {
 .partners-site {
     list-style: none;
 }
-.partners-site a:hover,
-.partners-site a:focus {
-    color: #000000;
+.html-academy {
+    background-image: url("../img/html-academy.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 199px;
+    height: 68px;
 }
+.html-academy:hover {
+    background: url("../img/html-academy1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 199px;
+    height: 68px;
+}
+.html-academy:active {
+    background: url("../img/html-academy2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 199px;
+    height: 68px;
+}
+.borodinski {
+    background-image: url("../img/borodinski.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 209px;
+    height: 90px;
+}
+.borodinski:hover {
+    background-image: url("../img/borodinski1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 209px;
+    height: 90px;
+}
+.borodinski:active {
+    background-image: url("../img/borodinski2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 209px;
+    height: 90px;
+}
+.pink {
+    background-image: url("../img/pink.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 185px;
+    height: 52px;
+}
+.pink:hover {
+    background-image: url("../img/pink1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 185px;
+    height: 52px;
+}
+.pink:active {
+    background-image: url("../img/pink2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 185px;
+    height: 52px;
+}
+.mishka {
+    background-image: url("../img/mishka.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 173px;
+    height: 84px;
+}
+.mishka:hover {
+    background-image: url("../img/mishka1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 173px;
+    height: 84px;
+}
+.mishka:active {
+    background-image: url("../img/mishka2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 173px;
+    height: 84px;
+}
+
 .form-text {
     font-size: 18px;
     line-height: 30px;
@@ -268,19 +390,47 @@ a {
     font-weight: 400;
     text-transform: capitalize;
 }
+.form-list:hover {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.form-list:active {
+    font-size: 16px;
+    line-height: 20px;
+    color: #d0d2d3;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.slider1 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    font-weight: 400;
+}
+.slider1:hover {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    font-weight: 400;
+}
 .show-btn {
     font-size: 16px;
     line-height: 18px;
     color: #000000;
     font-weight: 500;
     background-color: #eeeeee;
+    text-transform: uppercase;
+    font: inherit;
 }
 .show-btn:hover,
 .show-btn:focus {
     background-color: #dfdfdf;
 }
 .show-btn:active {
-    background-color: #d5d5d5;
+    color: #d5d5d5;
 }
 .sort {
     list-style: none;
@@ -294,10 +444,35 @@ a {
 .active-sort {
     font-weight: 14px;
     line-height: 18px;
-    color: #000000;
-    font-weight: 600;
+    color: #b2b2b2;
+    font-weight: 400;
 }
+.active-sort:hover {
+    font-weight: 14px;
+    line-height: 18px;
+    color: #858585;
+    font-weight: 400;
+}
+.active-sort:active {
+    font-weight: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
 .inactive-sort {
+    font-weight: 14px;
+    line-height: 18px;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+.inactive-sort:hover {
+    font-weight: 14px;
+    line-height: 18px;
+    color: #858585;
+    font-weight: 400;
+}
+.inactive-sort:active {
     font-weight: 14px;
     line-height: 18px;
     color: #000000;
@@ -306,14 +481,14 @@ a {
 .samples-galery li {
     list-style: none;
 }
-.active-page-btn {
+.active-page-btn a {
     font-size: 16px;
     line-height: 18px;
     color: #000000;
     font-weight: 400;
-    background-color: #ffffff;
+    background-color: #eeeeee;
 }
-}
+
 .pages li:nth-child(2) {
     font-size: 16px;
     line-height: 18px;
@@ -345,12 +520,19 @@ a {
     color: #666666;
     font-weight: 400;
 }
+.contacts-us a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+}
 .button {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     background-color: #db575a;
-    font-weight: 500;
+    font-weight: 400;
+    text-transform: uppercase;
     font: inherit;
 } 
 
@@ -362,6 +544,12 @@ a {
     line-height: 36px;
     font-weight: 700;
     color: #000000;
+}
+.friendship p:last-child {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #444444;
 }
 
 
