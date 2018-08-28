@@ -11,7 +11,9 @@
   <header class="main-header">
     <nav class="main-navigation">
         <div class="logo">
-        <a href="index.html"></a>
+        <a href="index.html">
+          <img src="img/main-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
         </div>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -28,60 +30,56 @@
   <main class="container">
     <form class="shop-sort">
       <h2 class="form-text">Стоимость:</h2>
-      <div class="range-filter">
-          <div class="range"></div>
-          <div class="range-green"></div>
-          <div class="toggle-toggle-min"></div>
-          <div class="toggle-toggle-max"></div>
-      </div>
-      <div class="price-controls">
-        <label>
-        <input type="range" min="0" max="15000" step="1" value="50">
-      </label>
-        <label class="min-price">От
-          <input type="text" class="price-from" value="0">
-        </label>
-        <label class="max-price">До
-          <input type="text" class="price-to" value="15000">
-        </label>
-      </div>
+        <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div style="margin-left:10px;width:150px;" class="bar"></div></div>
+                <div class="toggle min-toggle" style="left:40px;"></div>
+                <div class="toggle max-toggle" style="left:180px;"></div>
+            </div>
+            <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="15 000">
+            </div>
+        </div>
       <fieldset class="grid">
         <legend>Сетка:</legend>
-        <div class="form-list">
+        <ul class="login-list">
+          <li>
         <input type="radio" name="text" id="adaptive" checked class="form-list">
         <label for="adaptive">Адаптивная</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="radio" name="text" id="fixed" class="form-list">
         <label for="fixed">Фиксированная</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="radio" name="text" id="rubber" class="form-list">
         <label for="rubber">Резиновая</label>
-      </div>
-      </fieldset>
-      <fieldset class="grid">
-        <h2>Особенности:</h2>
-        <div class="form-list">
+          </li>
+        </ul>
+        <legend>Особенности:</legend>
+        <ul class="login-list">
+          <li>
         <input type="checkbox" id="slider" class="slider1" checked>
         <label for="slider">Слайдер</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="checkbox" id="ftrs">
         <label for="ftrs">Блок преимуществ</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="checkbox" id="news" checked>
         <label for="news">Новости</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="checkbox" id="galery">
         <label for="galery">Галерея</label>
-      </div>
-      <div class="form-list">
+          </li>
+          <li>
         <input type="checkbox" id="cart">
         <label for="cart">Корзина</label>
-      </div>
+          </li>
+        </ul>
       </fieldset>
       <button type="submit" class="show-btn">Показать</button>
     </form>
@@ -90,19 +88,19 @@
         <p>Сортировать:</p>
         <ul class="sort">
           <li>
-            <a href="#" class="active-sort">По цене</a>
+            <a href="#" class="active-sort inactive-sort sorty">По цене</a>
           </li>
           <li>
-            <a href="#" class="inactive-sort">По типу</a>
+            <a href="#" class="active-sort inactive-sort">По типу</a>
           </li>
           <li>
-            <a href="#" class="inactive-sort">По названию</a>
+            <a href="#" class="active-sort inactive-sort">По названию</a>
           </li>
           <li>
-            <a href="#" class="active-sort">▼</a>
+            <a href="#" class="active-sort inactive-sort sorty">▼</a>
           </li>
           <li>
-            <a href="#" class="inactive-sort">▲</a>
+            <a href="#" class="active-sort inactive-sort">▲</a>
           </li>
         </ul>
       </div>
@@ -160,7 +158,7 @@
           <p>191186, Санкт-Петербург,</p>
           <p> ул. Б. Конюшенная, д. 19/8</p>
           <p>тел.<a href="tel:+78122757575">+7(812)-275-75-75</a></p>
-          <button class="button" type="submit">Напишите нам</button>
+          <p> <a href="#" class="button">Напишите нам</a></p>
          </div>
         </div>
     </section>

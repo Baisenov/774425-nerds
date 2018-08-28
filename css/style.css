@@ -14,27 +14,6 @@ background-color: #ffffff;
 a {
     text-decoration: none;
 }
-.main-header .logo {
-    background-image: url(../img/main-logo.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 160px;
-    height: 65px;
-}
-.main-header .logo:hover {
-    background-image: url(../img/main-logo1.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 160px;
-    height: 65px;
-}
-.main-header .logo:active {
-    background-image: url(../img/main-logo2.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 160px;
-    height: 65px;
-}
 
 .main-header {
     background-color: #ededed;
@@ -132,57 +111,52 @@ a {
 .btn:active {
     color: #d7373b;
 }
-.feature-btn-red {
+.feature-btn {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
+    font-weight: 500;
+    font: inherit;
+}
+.btn-red {
     background-color: #fb565a;
-    font-weight: 500;
-    font: inherit;
-}
-.feature-btn-green {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #00ca74;
-    font-weight: 500;
-    font: inherit;
-}
-.feature-btn-yellow {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #efc84a;
-    font-weight: 500;
-    font: inherit;
 }
 
-.products .feature-btn-red:hover,
-.products .feature-btn-red:focus {
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.products .btn-red:hover,
+.products .btn-red:focus {
     color: #ffffff;
     background-color: #e74246;
 }
-.products .feature-btn-red:active {
+.products .btn-red:active {
     color: #d7373b;
 }
 
-.products .feature-btn-green:hover,
-.products .feature-btn-green:focus {
+.products .btn-green:hover,
+.products .btn-green:focus {
     color: #ffffff;
     background-color: #00bc6c;
 }
-.products .feature-btn-green:active {
+.products .btn-green:active {
     color: #00aa62;
 }
 
-.products .feature-btn-yellow:hover,
-.products .feature-btn-yellow:focus {
+.products .btn-yellow:hover,
+.products .btn-yellow:focus {
     color: #ffffff;
     background-color: #eab534;
 }
-.products .feature-btn-yellow:active {
+.products .btn-yellow:active {
     color: #e5a722;
 }
+
 
 .products p:first-child {
     background-image: url("img/notebook.png");
@@ -279,92 +253,7 @@ a {
 .partners-site {
     list-style: none;
 }
-.html-academy {
-    background-image: url("../img/html-academy.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 199px;
-    height: 68px;
-}
-.html-academy:hover {
-    background: url("../img/html-academy1.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 199px;
-    height: 68px;
-}
-.html-academy:active {
-    background: url("../img/html-academy2.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 199px;
-    height: 68px;
-}
-.borodinski {
-    background-image: url("../img/borodinski.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 209px;
-    height: 90px;
-}
-.borodinski:hover {
-    background-image: url("../img/borodinski1.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 209px;
-    height: 90px;
-}
-.borodinski:active {
-    background-image: url("../img/borodinski2.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 209px;
-    height: 90px;
-}
-.pink {
-    background-image: url("../img/pink.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 185px;
-    height: 52px;
-}
-.pink:hover {
-    background-image: url("../img/pink1.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 185px;
-    height: 52px;
-}
-.pink:active {
-    background-image: url("../img/pink2.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 185px;
-    height: 52px;
-}
-.mishka {
-    background-image: url("../img/mishka.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 173px;
-    height: 84px;
-}
-.mishka:hover {
-    background-image: url("../img/mishka1.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 173px;
-    height: 84px;
-}
-.mishka:active {
-    background-image: url("../img/mishka2.png");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    width: 173px;
-    height: 84px;
-}
-
-.form-text {
+.container h2 {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
@@ -383,21 +272,24 @@ a {
     color: #000000;
     font-weight: 700;
 }
-.form-list {
+.login-list {
+    list-style: none;
+}
+.login-list li {
     font-size: 16px;
     line-height: 20px;
     color: #283136;
     font-weight: 400;
     text-transform: capitalize;
 }
-.form-list:hover {
+.login-list li:hover {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
     font-weight: 400;
     text-transform: capitalize;
 }
-.form-list:active {
+.login-list li:active {
     font-size: 16px;
     line-height: 20px;
     color: #d0d2d3;
@@ -434,6 +326,12 @@ a {
 }
 .sort {
     list-style: none;
+}
+.sort .sorty {
+    font-weight: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
 }
 .samples-sort p {
     font-size: 18px;
@@ -507,6 +405,63 @@ a {
     color: #000000;
     font-weight: 400;
 }
+.range-filter {
+    padding-top:10px;
+    width:240px;
+    margin-left:0;
+    margin-bottom:10px;
+}
+.range-controls { 
+    position:relative;
+    height:80px;
+    margin-bottom:15px;
+    padding:0 30px;
+    background:#34495e;
+    border-radius:5px;
+    overflow:hidden;
+}
+.bar, .scale {
+    margin-top:39px;
+    height:2px;
+    background:#d7dcde;
+}
+.bar {
+    height:2px;
+    background:#00ca74;
+}
+.toggle { 
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:4px;
+    height:4px;
+    border:8px solid white;
+    background:#ababab;
+    cursor:pointer;
+    border-radius:50%;
+}
+.min-toggle {
+    left:70px ;
+}
+.max-toggle {
+    left:165px;
+}
+input {
+    width:55px;
+    padding:8px 10px;
+    margin-left:10px;
+    border:none;
+    background:#34495e;
+    font-size:16px;
+    font-family:"Tahoma", sans-serif;
+    text-align:center;
+    color:#283136;
+    border-radius:5px;
+    color: #ffffff;
+}
+.min-price {
+    margin-right:14px;
+}
 
 .contacts-us h4 {
     font-size: 18px;
@@ -526,7 +481,7 @@ a {
     color: #666666;
     font-weight: 400;
 }
-.button {
+.contacts-us .button {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
