@@ -130,30 +130,28 @@ a {
     background-color: #efc84a;
 }
 
-.products .btn-red:hover,
-.products .btn-red:focus {
+.btn-red:hover,
+.btn-red:focus {
     color: #ffffff;
     background-color: #e74246;
 }
-.products .btn-red:active {
+.btn-red:active {
     color: #d7373b;
 }
-
-.products .btn-green:hover,
-.products .btn-green:focus {
+.btn-green:hover,
+.btn-green:focus {
     color: #ffffff;
     background-color: #00bc6c;
 }
-.products .btn-green:active {
+.btn-green:active {
     color: #00aa62;
 }
-
-.products .btn-yellow:hover,
-.products .btn-yellow:focus {
+.btn-yellow:hover,
+.btn-yellow:focus {
     color: #ffffff;
     background-color: #eab534;
 }
-.products .btn-yellow:active {
+.btn-yellow:active {
     color: #e5a722;
 }
 
@@ -327,64 +325,94 @@ a {
 .sort {
     list-style: none;
 }
-.sort .sorty {
-    font-weight: 14px;
+.sort a {
+    font-size: : 14px;
+    line-height: 18px;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+.sort a:hover {
+    font-size: : 14px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+.sort a:active {
+    font-size: : 14px;
     line-height: 18px;
     color: #000000;
     font-weight: 400;
 }
+.sort .active {
+    font-size: : 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+.sort .active:hover{
+    font-size: : 14px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+.active li {
+    font-size: : 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
 .samples-sort p {
     font-size: 18px;
     line-height: 18px;
     color: #000000;
     font-weight: 700;
 }
-.active-sort {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #b2b2b2;
-    font-weight: 400;
-}
-.active-sort:hover {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #858585;
-    font-weight: 400;
-}
-.active-sort:active {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #000000;
-    font-weight: 400;
-}
-
-.inactive-sort {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #b2b2b2;
-    font-weight: 400;
-}
-.inactive-sort:hover {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #858585;
-    font-weight: 400;
-}
-.inactive-sort:active {
-    font-weight: 14px;
-    line-height: 18px;
-    color: #000000;
-    font-weight: 400;
-}
 .samples-galery li {
     list-style: none;
 }
-.active-page-btn a {
+
+.paginator .active {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+.paginator .active:hover {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #dfdfdf;
+}
+.paginator .active:active {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #d5d5d5;
+}
+.paginator .next {
     font-size: 16px;
     line-height: 18px;
     color: #000000;
     font-weight: 400;
     background-color: #eeeeee;
+}
+.paginator .next:hover {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #dfdfdf;
+}
+.paginator .next:active {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #d5d5d5;
 }
 
 .pages li:nth-child(2) {
@@ -446,7 +474,7 @@ a {
 .max-toggle {
     left:165px;
 }
-input {
+.price-controls input {
     width:55px;
     padding:8px 10px;
     margin-left:10px;
