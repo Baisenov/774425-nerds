@@ -9,14 +9,13 @@
 </head>
 <body>
   <header class="main-header">
+    <div class="container">
     <nav class="main-navigation">
-      <div class="container">
         <div class="logo">
         <a href="#">
           <img src="img/main-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
         </div>
-      </div>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -28,6 +27,28 @@
       </ul>
     </nav>
     <section class="slider">
+      <div class="slide">
+      <div class="slide-title1">Долго, дорого,
+      <br>скрупулезно.</div>
+        <p>Математически выверенный дизайн</p>
+        <p>для вашего сайта или мобильного приложения</p>
+        <a class="button" href="#">Узнать больше</a>
+      </div>
+      <div class="slide">
+      <div class="slide-title2">Любим математику 
+        <br>как никто другой</div>
+        <p>Никакого креатива, только математические формулы</p>
+        <p>для расчета идеальных пропорций</p>
+        <a class="button" href="#">Узнать больше</a>
+      </div>
+      <div class="slide">
+      <div class="slide-title3">Только ночь, 
+        <br>только хардкор</div>
+        <p>Работать днем как все? Мы против этого</p>
+        <p>Ближе к полуночи работа только начинается</p>
+        <a class="button" href="#">Узнать больше</a>
+      </div>
+      </div>
       <input type="radio" id="btn-1" name="toggle" checked>
       <input type="radio" id="btn-2" name="toggle">
       <input type="radio" id="btn-3" name="toggle">
@@ -36,48 +57,35 @@
         <label for="btn-2"></label>
         <label for="btn-3"></label>
       </div>
-      <div class="slide">
-      <div class="slide-title1">Долго, дорого,
-      <br>скрупулезно.</div>
-        <p>Математически выверенный дизайн</p>
-        <p>для вашего сайта или мобильного приложения</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <div class="slide">
-      <div class="slide-title2">Любим математику 
-        <br>как никто другой</div>
-        <p>Никакого креатива, только математические формулы</p>
-        <p>для расчета идеальных пропорций</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <div class="slide">
-      <div class="slide-title3">Только ночь, 
-        <br>только хардкор</div>
-        <p>Работать днем как все? Мы против этого</p>
-        <p>Ближе к полуночи работа только начинается</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      </div>
     </section>
+  </div>
   </header>
   <main class="container">
     <section class="products">
+      <ul class="products-list">
+        <li class="products-item">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <p><img src="img/notebook.png" width="300" height="146" alt="Картинка ноутбука"></p>
       <h2>Веб сайты</h2>
       <p>Мир никогда не будет преждним</p>
       <p>после того, как увидит ваш сайт</p>
-      <a class="feature-btn btn-red" href="#">Заказать</a>
+      <a class="button btn-red" href="#">Заказать</a>
+    </li>
+    <li class="products-item">
       <p><img src="img/mobile.png" width="300" height="146" alt="Картинка мобильных телефонов"></p>
       <h2>Приложения</h2>
       <p>Покорите топ-10 приложений</p>
       <p>в App Store и Google Play </p>
-      <a class="feature-btn btn-green" href="#">Заказать</a>
+      <a class="button btn-green" href="#">Заказать</a>
+    </li>
+    <li class="products-item">
       <p><img src="img/presentation.png" width="300" height="146" alt="Картинка презентации"></p>
       <h2>Презентации</h2>
       <p>Вы даже не подозреваете,</p>
       <p>насколько вы узумительны!</p>
-      <a class="feature-btn btn-yellow" href="#">Заказать</a>
+      <a class="button btn-yellow" href="#">Заказать</a>
+    </li>
+  </ul>
     </section>
     <section class="about">
       <div class="about-us">
@@ -88,7 +96,7 @@
       </div>
       <div class="services">
         <h4>Выполняем заказы на разработку:</h4>
-        <ul>
+        <ul class="list-order"> 
           <li>Веб сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -99,16 +107,18 @@
       </div>
       <div class="advantages">
         <h4>с <time datetime="2014-01-01">2004</time> года любим точность во всем</h4>
-        <ul class="percentages">
-          <li>146%</li>
-          <li>100%</li>
-          <li>50%</li>
-        </ul>
-        <ul class="advan">
-          <li>Уровень самоотдачи</li>
-          <li>Соблюдение сроков</li>
-          <li>Минимальная предоплата</li>
-        </ul>
+        <table class="table">
+          <tr>
+            <th><span>146<sup>%</sup></span></th>
+            <th><span>100<sup>%</sup></span></th>
+            <th><span>50<sup>%</sup></span></th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
       </div>
     </section>
     <section class="partners">
@@ -137,7 +147,7 @@
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
     <section class="map">
       <img src="img/map.png" width="1500" height="400" alt="Карта">
         <div class="container">
@@ -146,22 +156,65 @@
           <p>191186, Санкт-Петербург,</p>
           <p> ул. Б. Конюшенная, д. 19/8</p>
           <p>тел.<a href="tel:+78122757575">+7(812)-275-75-75</a></p>
-          <p> <a href="#" class="button">Напишите нам</a></p>
+          <p> <a href="#" class="button modal">Напишите нам</a></p>
          </div>
         </div>
     </section>
-    <div>
-      <ul class="social-network">
-        <li><a href="vk.html" title="Наша страница во вконтакте">VK</a></li>
-        <li><a href="facebook.html" title="Наша страница в Фейсбуке">facebook</a></li>
-        <li><a href="instagram.html" title="Наша страница в Инстаграме">instagram</a></li>
-      </ul> 
+    <div class="footer-social">
+      <ul>
+        <li><a href="#" class="social-button">
+          <span class="visually-hidden">Vk</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+        </a></li>
+        <li><a href="#" class="social-button">
+          <span class="visually-hidden">Facebook</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+        </a></li>
+        <li><a href="#" class="social-button">
+          <span class="visually-hidden">Instagram</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+        </a></li>
+      </ul>
     </div>
     <div class="friendship">
-      <p>Давайте дружить, это выгодно!</p>
+      <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
+  </div>
   </footer>
+  <section class="modal-window">
+    <button class="modal-close">Закрыть</button>
+    <h3>Напишите нам</h3>
+    <form class=appointment-form action" method="post">
+      <div class="row">
+        <p>
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="appointment-mail">Ваш e-mail:</label>
+          <input id="appointment-mail" type="text" placeholder="email@example.com">
+        </p>
+      </div>
+        <p>
+          <label for="appointment-text">Текст письма</label>
+          <textarea id="appointment-text" name="comment" placeholder="В свободной форме" cols="40" rows="5"></textarea>
+        </p>
+        <p>
+          <button class="button">Отправить</button>
+        </p>
+      </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
