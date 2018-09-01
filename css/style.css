@@ -1,3 +1,8 @@
+* {
+    outline: 1px dashed red;
+}
+
+
 body {
 margin: 0;
 padding: 0;
@@ -15,6 +20,154 @@ a {
     color: #000000;
     text-decoration: none;
 }
+.container {
+      width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+.slider {
+  position: relative;
+  background-color: #eeeeee;
+}
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+.slider-controls i {
+    position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls .active::before {
+  
+}
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  border-radius: 50%;
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+.slider-item:nth-child(2) {
+  display: block;
+}
+.slider-item:nth-child(2) {
+  display: block;
+}
+.slider-item:nth-child(1) {
+  background-image: url("img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+.slider-item:nth-child(2) {
+  background-image: url("img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+.slider-item h3 {
+    max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+.button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+
+
 .visually-hidden:not(:focus):not(:active),
 .slider input[type="checked"].visually-hidden,
 .slider input[type="radio"].visually-hidden {
@@ -59,67 +212,6 @@ a {
 .logo {
     margin-right: 200px;
 }
-.slider {
-    margin: 0;
-    padding: 0;
-}
-.slide div {
-    padding-top: 40px;
-    padding-bottom: 100px;
-}
-.slide-title1 {
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-.slide-title2 {
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-.slide-title3 {
-    font-size: 55px;
-    line-height: 55px;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-
-.slide .slide-title1 {
-    background-image: url("../img/slide1.jpg");
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    width: 698px;
-    height: 413px;
-}
-.slide .slide-title2 {
-    background-image: url("../img/slide2.jpg");
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    width: 698px;
-    height: 413px;
-}
-.slide .slide-title3 {
-    background-image: url("../img/slide3.jpg");
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    width: 698px;
-    height: 413px;
-}
-.slide p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
-    font-weight: 400;
-    text-transform: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
-}
 
 .site-navigation {
     list-style: none;
@@ -135,12 +227,6 @@ a {
 .site-navigation li {
     margin-right: 48px;
 }
-.container {
-    width: 1160px;
-    margin: auto;
-    padding: 0 20px;
-}
-
 .site-navigation,
 .shop-navigation {
     list-style: none;
@@ -469,28 +555,7 @@ a {
     font-weight: 700;
 }
 
-.percentages li {
-    font-size: 45px;
-    line-height: 10,06px;
-    color: #000000;
-    font-weight: 700;
-    list-style: none;
-}
-
 .container h2 {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    font-weight: 700;
-}
-.min-price,
-.max-price {
-    font-size: 16px;
-    line-height: 22px;
-    color: #283136;
-    font-weight: 400;
-}
-.grid legend {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
@@ -520,18 +585,6 @@ a {
     font-weight: 400;
     text-transform: capitalize;
 }
-.slider1 {
-    font-size: 16px;
-    line-height: 20px;
-    color: #283136;
-    font-weight: 400;
-}
-.slider1:hover {
-    font-size: 16px;
-    line-height: 20px;
-    color: #283136;
-    font-weight: 400;
-}
 .active li {
     font-size: : 14px;
     line-height: 18px;
@@ -550,60 +603,80 @@ a {
 }
 
 .range-filter {
-    padding-top:10px;
-    width:240px;
-    margin-left:0;
-    margin-bottom:10px;
+    width:260px;
+    margin-top: 49px;
+    
 }
-.range-controls { 
-    position:relative;
-    height:80px;
-    margin-bottom:15px;
-    padding:0 30px;
-    background:#34495e;
-    border-radius:5px;
-    overflow:hidden;
+.range-controls  { 
+    position: relative;
+    height: 41px;
+  margin-bottom: 15px;
+  background-color: #f1f1f1;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
 }
-.bar, 
-.scale {
-    margin-top:39px;
-    height:2px;
-    background:#d7dcde;
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
 }
-.bar {
-    height:2px;
-    background:#00ca74;
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
 }
-.toggle { 
-    position:absolute;
-    top:30px;
-    left:30px;
-    width:4px;
-    height:4px;
-    border:8px solid white;
-    background:#ababab;
-    cursor:pointer;
-    border-radius:50%;
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+
 }
-.min-toggle {
-    left:70px ;
+.range-controls .toggle-min {
+  left: 18px;
 }
-.max-toggle {
-    left:165px;
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+.price-controls {
+  font-size: 0;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .price-controls input {
-    width:55px;
-    padding:8px 10px;
-    margin-left:10px;
-    border:none;
-    background:#34495e;
-    font-size:16px;
-    font-family:"Tahoma", sans-serif;
-    text-align:center;
-    color:#283136;
-    border-radius:5px;
-    color: #ffffff;
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
+
+
+
 .min-price {
     margin-right:14px;
 }
@@ -615,7 +688,6 @@ a {
 .map {
     position: relative;
 }
-
 
 .contact-us {
     position: relative;
@@ -704,13 +776,6 @@ a {
     margin-top: 10px;
 }
 
-
-
-
-
-
-
-
 .header-name {
     text-align: center;
     font-size: 55px;
@@ -727,26 +792,17 @@ a {
 .filter {
     width: 260px;
 }
-.form-text {
-    margin: 0;
-}
-.grid {
+.filter-item {
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
 
     border: none;
 }
-.grid ul {
-    margin: 0;
-    margin-top: 20px;
-    margin-left: 35px;
-    padding: 0;
-
-    list-style: none;
-    text-transform: none;
-    line-height: 20px;
-    font-weight: 400;
+.filter-item legent {
+    font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .legend {
     font-weight: 700;
@@ -770,7 +826,8 @@ a {
 
     border-radius: 5px;
 }
-.range-controls .scale {
+.range-controls
+.scale {
     height: 2px;
 }
 .range-control .bar {
@@ -794,10 +851,11 @@ a {
     border-radius: 50%
 }
 .range-controls .toggle-min {
-    left: 18px;
+  left: 50px;
 }
+
 .range-controls .toggle-max {
-    left: 160px;
+  left: 110px;
 }
 .price-controls {
     font-size: 0;

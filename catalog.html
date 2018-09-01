@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="RU">
 <head>
-<meta charset="utf-8">
+<meta charet="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -29,62 +29,23 @@
     <h1 class="header-name">Магазин готовых шаблонов</h1>
   </header>
   <main class="container catalog-page">
-    <form  action="" method="get" class="filter">
-     <fieldset class="grid">
-      <legend  class="form-text">Стоимость:</legend>
+   <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
         <div class="range-filter">
-            <div class="range-controls">
-                <div class="scale"><div style="margin-left:10px;width:150px;" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="style="margin-left: 20%; width: 30%""></div>
             </div>
-            <div class="price-controls">
-              <label for="" class="min-price">от<input name="min-price" type="text" value="0"></label>
-              <label for="" class="max-price">до<input name="max-price" type="text" value="15000"></label>
-            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
         </div>
-        <legend>Сетка:</legend>
-        <ul class="login-list">
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" checked>
-        <label for="adaptive">Адаптивная</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fixed">
-        <label for="fixed">Фиксированная</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber">
-        <label for="rubber">Резиновая</label>
-          </li>
-        </ul>
-        <legend>Особенности:</legend>
-        <ul class="login-list">
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
-        <label for="filter-slider">Слайдер</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-features" name="features">
-        <label for="filter-features">Блок преимуществ</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
-        <label for="filter-news">Новости</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-galery" name="galery">
-        <label for="filter-galery">Галерея</label>
-          </li>
-          <li class="filter-option">
-        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
-        <label for="filter-basket">Корзина</label>
-          </li>
-        </ul>
       </fieldset>
-      <button type="submit" class="show-button button">Показать</button>
-    </form>
-  </div>
     <section class="samples">
       <div class="samples-sort">
         <p class="main-head">Сортировать:</p>
