@@ -61,30 +61,31 @@
         <li class="features-item">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <h2>Веб сайты</h2>
-      <p>Мир никогда не будет преждним</p>
-      <p>после того, как увидит ваш сайт</p>
+      <p>Мир никогда не будет преждним<
+      после того, как увидит ваш сайт</p>
       <a class="button btn-red" href="#">Заказать</a>
     </li>
     <li class="features-item">
       <h2>Приложения</h2>
-      <p>Покорите топ-10 приложений</p>
-      <p>в App Store и Google Play </p>
+      <p>Покорите топ-10 приложений
+      в App Store и Google Play </p>
       <a class="button btn-green" href="#">Заказать</a>
     </li>
     <li class="features-item">
       <h2>Презентации</h2>
-      <p>Вы даже не подозреваете,</p>
-      <p>насколько вы узумительны!</p>
+      <p>Вы даже не подозреваете,
+      насколько вы узумительны!</p>
       <a class="button btn-yellow" href="#">Заказать</a>
     </li>
   </ul>
     </section>
+
     <section class="about-us">
       <div class="us">
         <b>Мы - маленькая, но гордая
         дизайн-студия из Краснодара</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический</p>
-        <p>расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический
+        расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         <h4 class="list-header">
         Выполняем заказы на разработку:
         </h4>
@@ -140,11 +141,12 @@
   </main>
   <footer class="main-footer">
     <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d4240.619000399229!2d30.50883096236881!3d50.46421491046173!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C60YzRj9C90L7QstGB0LrQsNGPLCDQmtC40LXQsiwg0LPQvtGA0L7QtCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LA!3m2!1d50.462416999999995!2d30.4818027!4m3!3m2!1d50.459352599999995!2d30.4965838!5e0!3m2!1sru!2sua!4v1533548191824" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe> 
       <div class="img-map">
-      <img src="img/map.png" width="1500" height="400" alt="Карта">
+      <img src="" width="1500" height="400" alt="Карта">
       </div>
         <div class="container">
-         <div class="contacts-us">
+         <div class="address">
           <h4>NЁrds design studio</h4>
           <p>191186, Санкт-Петербург,</p>
           <p> ул. Б. Конюшенная, д. 19/8</p>
@@ -199,7 +201,19 @@
         </p>
       </form>
     </section>
-
+    <script>
+    var link = document.querySelector(".modal");
+    var pop = document.querySelector(".modal-window");
+    var close = document.querySelector(".modal-close");
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      pop.classList.add("modal-show")
+    })
+    close.addEventListener("click", function(evt){
+      evt.preventDefault();
+      pop.classList.remove("modal-show")
+    })
+  </script>
 </body>
 </html>
 
