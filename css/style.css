@@ -1,7 +1,7 @@
-/* {
+* {
     outline: 1px dashed red;
 }
-*/
+
 body {
   min-width: 1200px; 
 margin: 0;
@@ -25,19 +25,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-.main-header {
-  background-color: #eeeeee;
-
 }
 .slider {
   position: relative;
@@ -148,8 +135,7 @@ a {
 }
 .button {
   display: inline-block;
-  width: 240px;
-  padding: 13px 0;
+  padding: 13px 0px;
   
   font-size: 16px;
   line-height: 18px;
@@ -162,7 +148,10 @@ a {
   border-radius: 3px;
   border: none;
 }
-
+.slider-item-button {
+    width: 240px;
+    height: auto;
+}
 .button:hover,
 .button:focus {
   background-color: #e74246;
@@ -260,17 +249,25 @@ a {
     height: 17px;
     top: 50%;
     margin-top: -8px;
+    margin-left: -26px;
     background: url(../img/cart-icon.svg) 0 0 no-repeat;
 }
 .btn-red {
+    width: 160px;
+    height: auto;
     background-color: #fb565a;
+
 }
 
 .btn-green {
+    width: 160px;
+    height: auto;
     background-color: #00ca74;
 }
 
 .btn-yellow {
+    width: 160px;
+    height: auto;
     background-color: #efc84a;
 }
 
@@ -302,6 +299,35 @@ a {
 .features {
     margin-bottom: 80px;
     position: relative;
+}
+.features-list li:nth-child(1)::before {
+    content: "";
+
+    display: flex;
+
+    background-image: url("../img/notebook.png");
+    width: 300px; 
+    height: 146px;
+    background-color: #ffffff;
+}
+.features-list li:nth-child(2)::before {
+    content: "";
+
+    display: flex;
+
+    background-image: url("../img/mobile.png");
+    width: 300px; 
+    height: 146px;
+    background-color: #ffffff;
+}
+.features-list li:nth-child(3)::before {
+    content: "";
+
+    display: flex;
+    background-image: url("../img/presentation.png");
+    width: 300px; 
+    height: 146px;
+    background-color: #ffffff;
 }
 .features::after {
     content: "";
@@ -342,24 +368,6 @@ a {
     color: #283136;
     font-weight: 400;
     text-transform: none;
-}
-.features-item:nth-child(1) {
-    background-image: url("../img/notebook.png");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-color: #ffffff;
-}
-.features-item:nth-child(2) {
-    background-image: url("../img/mobile.png");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-color: #ffffff;
-}
-.features-item:nth-child(3) {
-    background-image: url("../img/presentation.png");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-color: #ffffff;
 }
 .header {
     color: #000000;
@@ -457,16 +465,16 @@ a {
     margin-bottom: 25px;
     margin-right: 25px;
 }
-.partners {
+.our-project {
     padding: 47px 30px 0 40px;
     margin-bottom: 50px;
 }
-.partners-site {
+.project-list {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
-.partners-site::after {
+.project-list::after {
     content: "";
 
     position: absolute;
@@ -477,23 +485,23 @@ a {
 
     background-color: #eeeeee;
 }
-.partners-site li {
+.project-list li {
     list-style: none;
     opacity: 1;
 
     position: relative;
 }
-.partners-site a {
+.project-list a {
     opacity: 0.2;
 }
-.partners-site a:hover,
-.partners-site a:focus {
+.project-list a:hover,
+.project-list a:focus {
     opacity: 1;
 }
-.partners-site a:active {
+.project-list a:active {
     opacity: 0.1;
 }
-.partners-site li::after {
+.project-list li::after {
     content: "";
     position: absolute;
     height: 60px;
@@ -504,7 +512,7 @@ a {
 
     background-color: #eeeeee;
 }
-.partners-site li:last-shild::after {
+.project-list li:last-shild::after {
     display: none;
 }
 
@@ -568,11 +576,14 @@ a {
     display: block;
     cursor: pointer;
     margin-top: 25px;
+
+    width: 219px;
+    height: auto;
 }
 .modal-window {
-    position: relative;
+    position: absolute;
     left: 40%;
-    right: 60%;
+    right: 30%;
 }
 
 
@@ -886,6 +897,9 @@ legend {
     margin: 0;
 
 }
+.sort-param li {
+    padding-left: 27px;
+}
 .sort-param li:hover {
     opacity: 0.8;
 }
@@ -1038,10 +1052,19 @@ legend {
     border-radius: 3px;
 }
 .filter-button {
-    display: inline;
+    display: inline-block;
     color: #000000;
     background-color: #eeeeee;
 
+
+}
+.filter-btn {
+    display: inline-block;
+    color: #000000;
+    background-color: #eeeeee;
+
+    width: 260px;
+    height: auto;
 }
 .paginator-item-current .button:hover {
     background-color: #ffffff;
